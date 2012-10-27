@@ -1,0 +1,7 @@
+https://github.com/tomchristie/django-rest-framework/zipball/restframework2
+django==1.4.2
+Pygments==1.5
+
+# heroku
+psycopg2==2.4.5
+dj-database-url==0.2.0
