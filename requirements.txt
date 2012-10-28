@@ -1,4 +1,4 @@
-https://github.com/tomchristie/django-rest-framework/zipball/restframework2
+git+git://github.com/tomchristie/django-rest-framework/@restframework2
 django==1.4.2
 Pygments==1.5
 
