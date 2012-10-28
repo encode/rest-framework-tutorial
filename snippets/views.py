@@ -10,6 +10,10 @@ from snippets.serializers import SnippetSerializer, UserSerializer
 
 @api_view(('GET',))
 def api_root(request, format=None):
+    """
+    This is the api root view. Follow the Hyperinks each resource offers
+    to explore the api.
+    """
     return Response({
         'users': reverse('user-list', request=request),
         'snippets': reverse('snippet-list', request=request)
@@ -17,6 +21,13 @@ def api_root(request, format=None):
 
 
 class SnippetList(generics.ListCreateAPIView):
+    """
+    This view is a `ListCreateAPIView` of the `Snippet` model.
+
+    Snippets are paginated by 10 per page.
+
+    Snippets are truncated at 100 instances.
+    """
     model = Snippet
     serializer_class = SnippetSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
@@ -26,6 +37,15 @@ class SnippetList(generics.ListCreateAPIView):
 
 
 class SnippetInstance(generics.RetrieveUpdateDestroyAPIView):
+    """
+    This is a `RetrieveUpdateDestroyAPIView` of the `Snippet` model.
+
+    Authenticated users can update and delete the instances.
+
+    Try it yourself by logging in as one of these four users: *amy*, *max*, *jose* or *aziz*
+
+    The passwords are the same as the usernames.
+    """
     model = Snippet
     serializer_class = SnippetSerializer
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly,)
@@ -44,10 +64,20 @@ class SnippetHighlight(generics.SingleObjectAPIView):
 
 
 class UserList(generics.ListAPIView):
+    """
+    This is a `ListAPIView` of the `django.contrib.auth.User` model.
+
+    As you can see, related models (`Snippet`) are serialized along in the response,
+    because the `Serializer` for this view defines a `ManyHyperlinkedRelatedField`
+    to the `snippet-detail` view.
+    """
     model = User
     serializer_class = UserSerializer
 
 
 class UserInstance(generics.RetrieveAPIView):
+    """
+    This is a `RetrieveAPIView` of the `django.contrib.auth.User` model.
+    """
     model = User
     serializer_class = UserSerializer
