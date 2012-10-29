@@ -156,3 +156,5 @@ import os
 if os.environ.get('HEROKU'):  # heroku config:set HEROKU=1
     import dj_database_url
     DATABASES['default'] = dj_database_url.config()
+
+LOGIN_REDIRECT_URL = '/'
