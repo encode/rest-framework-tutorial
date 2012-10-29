@@ -5,7 +5,7 @@ from rest_framework import serializers
 
 class SnippetSerializer(serializers.HyperlinkedModelSerializer):
     owner = serializers.Field(source='owner.username')
-    highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight')
+    highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight', format='html')
 
     class Meta:
         model = models.Snippet

@@ -24,8 +24,8 @@ def api_root(request, format=None):
     [tutorial]: http://django-rest-framework.org/tutorial/1-serialization
     """
     return Response({
-        'users': reverse('user-list', request=request),
-        'snippets': reverse('snippet-list', request=request)
+        'users': reverse('user-list', request=request, format=format),
+        'snippets': reverse('snippet-list', request=request, format=format)
     })
 
 
