@@ -5,6 +5,7 @@ Markdown==2.2.0
 
 # heroku
 # run these commands to setup heroku properly
+# heroku create --stack cedar --buildpack git://github.com/heroku/heroku-buildpack-python.git
 # heroku config:add BUILDPACK_URL=git@github.com:heroku/heroku-buildpack-python.git#purge
 # heroku config:set HEROKU=1
 psycopg2==2.4.5
