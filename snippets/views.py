@@ -11,8 +11,17 @@ from snippets.serializers import SnippetSerializer, UserSerializer
 @api_view(('GET',))
 def api_root(request, format=None):
     """
-    This is the api root view. Follow the Hyperinks each resource offers
-    to explore the api.
+    This is the entry point for the API described in the
+    [REST framework tutorial][tutorial].
+
+    Follow the hyperinks each resource offers to explore the API.
+
+    Note that you can also explore the API from the command line, for instance
+    using the `curl` command-line tool.
+
+    For example: `curl -X GET http://restframework.herokuapp.com/ -H "Accept: application/json; indent=4"`
+
+    [tutorial]: http://django-rest-framework.org/tutorial/1-serialization
     """
     return Response({
         'users': reverse('user-list', request=request),
@@ -22,11 +31,14 @@ def api_root(request, format=None):
 
 class SnippetList(generics.ListCreateAPIView):
     """
-    This view is a `ListCreateAPIView` of the `Snippet` model.
+    This view presents a list of code snippets, and allows new snippets to
+    be created.
 
-    Snippets are paginated by 10 per page.
+    Try it yourself by logging in as one of these four users: **amy**, **max**,
+    **jose** or **aziz** - The passwords are the same as the usernames.
 
-    Snippets are truncated at 100 instances.
+    Note that code snippets are paginated to a maximum of 10 per page,
+    and the maximum number of code snippets is capped at 100 instances.
     """
     model = Snippet
     serializer_class = SnippetSerializer
@@ -38,13 +50,15 @@ class SnippetList(generics.ListCreateAPIView):
 
 class SnippetInstance(generics.RetrieveUpdateDestroyAPIView):
     """
-    This is a `RetrieveUpdateDestroyAPIView` of the `Snippet` model.
+    This view presents an instance of a code snippet.
 
-    Authenticated users can update and delete the instances.
+    The `highlight` field presents a hyperlink to the hightlighted HTML
+    representation of the code snippet.
 
-    Try it yourself by logging in as one of these four users: *amy*, *max*, *jose* or *aziz*
+    The **owner** of the code snippet may update or delete this instance.
 
-    The passwords are the same as the usernames.
+    Try it yourself by logging in as one of these four users: **amy**, **max**,
+    **jose** or **aziz** - The passwords are the same as the usernames.
     """
     model = Snippet
     serializer_class = SnippetSerializer
@@ -65,11 +79,10 @@ class SnippetHighlight(generics.SingleObjectAPIView):
 
 class UserList(generics.ListAPIView):
     """
-    This is a `ListAPIView` of the `django.contrib.auth.User` model.
+    This view presents a list of all the users in the system.
 
-    As you can see, related models (`Snippet`) are serialized along in the response,
-    because the `Serializer` for this view defines a `ManyHyperlinkedRelatedField`
-    to the `snippet-detail` view.
+    As you can see, related snippet instances are serialized using a
+    hyperlinked representation.
     """
     model = User
     serializer_class = UserSerializer
@@ -77,7 +90,7 @@ class UserList(generics.ListAPIView):
 
 class UserInstance(generics.RetrieveAPIView):
     """
-    This is a `RetrieveAPIView` of the `django.contrib.auth.User` model.
+    This view presents a instance of one of the users in the system.
     """
     model = User
     serializer_class = UserSerializer
