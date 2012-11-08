@@ -21,7 +21,7 @@ def api_root(request, format=None):
 
     For example: `curl -X GET http://restframework.herokuapp.com/ -H "Accept: application/json; indent=4"`
 
-    [tutorial]: http://django-rest-framework.org/tutorial/1-serialization
+    [tutorial]: http://django-rest-framework.org/tutorial/1-serialization.html
     """
     return Response({
         'users': reverse('user-list', request=request, format=format),
