@@ -35,7 +35,7 @@ class Snippet(models.Model):
         self.highlighted = highlight(self.code, lexer, formatter)
         super(Snippet, self).save(*args, **kwargs)
 
-        # maximize the amount of instances to be created
+        # limit the number of instances retained
         snippets = Snippet.objects.all()
         if len(snippets) > 100:
             snippets[0].delete()
