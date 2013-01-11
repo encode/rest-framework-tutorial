@@ -1,4 +1,4 @@
-from snippets import models
+from snippets.models import Snippet
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
@@ -8,7 +8,7 @@ class SnippetSerializer(serializers.HyperlinkedModelSerializer):
     highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight', format='html')
 
     class Meta:
-        model = models.Snippet
+        model = Snippet
         fields = ('url', 'highlight', 'owner',
                   'title', 'code', 'linenos', 'language', 'style')
 
