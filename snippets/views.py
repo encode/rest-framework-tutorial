@@ -48,7 +48,7 @@ class SnippetList(generics.ListCreateAPIView):
         obj.owner = self.request.user
 
 
-class SnippetInstance(generics.RetrieveUpdateDestroyAPIView):
+class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
     """
     This view presents an instance of a code snippet.
 
