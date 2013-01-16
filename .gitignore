@@ -1,7 +1,11 @@
-*.pyc
+# Database content will be handled by fixtures
 *.db
+
+# These are normally defined globally
+*.pyc
 *~
 .*
 
+# Accept these files in the repository
 !.gitignore
 !.travis.yml
