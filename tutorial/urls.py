@@ -1,6 +1,6 @@
-from snippets import views
 from django.conf.urls import patterns, include, url
 from rest_framework.urlpatterns import format_suffix_patterns
+from snippets import views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
