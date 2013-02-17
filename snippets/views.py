@@ -15,7 +15,7 @@ def api_root(request, format=None):
     This is the entry point for the API described in the
     [REST framework tutorial][tutorial].
 
-    Follow the hyperinks each resource offers to explore the API.
+    Follow the hyperlinks each resource offers to explore the API.
 
     Note that you can also explore the API from the command line, for instance
     using the `curl` command-line tool.
