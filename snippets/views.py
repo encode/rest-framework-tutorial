@@ -90,7 +90,7 @@ class UserList(generics.ListAPIView):
     serializer_class = UserSerializer
 
 
-class UserInstance(generics.RetrieveAPIView):
+class UserDetail(generics.RetrieveAPIView):
     """
     This view presents a instance of one of the users in the system.
     """
