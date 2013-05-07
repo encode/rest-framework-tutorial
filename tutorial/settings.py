@@ -11,7 +11,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3', # Or use an alternate database backend.
+        'ENGINE': 'django.db.backends.sqlite3',  # Or use an alternate database backend.
         'NAME': 'tmp.db',                       # Path to sqlite3 database file.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
@@ -153,7 +153,7 @@ LOGGING = {
 }
 
 REST_FRAMEWORK = {
-    'PAGINATE_BY': 10
+    'PAGINATE_BY': 10,
 }
 
 import os
