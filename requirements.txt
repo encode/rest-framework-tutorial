@@ -1,4 +1,4 @@
-git+git://github.com/tomchristie/django-rest-framework/@master#egg=rest_framework==2.3.13
+djangorestframework==2.4.4
 django==1.5.1
 Pygments==1.5
 Markdown==2.2.0
