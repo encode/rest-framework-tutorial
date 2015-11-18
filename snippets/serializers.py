@@ -5,15 +5,34 @@ from django.contrib.auth.models import User
 
 class SnippetSerializer(serializers.HyperlinkedModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
-    highlight = serializers.HyperlinkedIdentityField(view_name='snippet-highlight', format='html')
+    highlight = serializers.HyperlinkedIdentityField(
+        view_name='snippet-highlight',
+        format='html'
+    )
 
     class Meta:
         model = Snippet
-        fields = ('url', 'highlight', 'owner',
-                  'title', 'code', 'linenos', 'language', 'style')
-                  
+        fields = [
+            'url', 'highlight', 'owner', 'title', 'code',
+            'linenos', 'language', 'style'
+        ]
+
+
+class SnippetSerializerV1(serializers.ModelSerializer):
+    class Meta:
+        model = Snippet
+        fields = [
+            'url', 'highlighted', 'owner', 'title', 'code',
+            'linenos', 'language', 'style'
+        ]
+
+
 class UserSerializer(serializers.HyperlinkedModelSerializer):
-    snippets = serializers.HyperlinkedRelatedField(queryset=Snippet.objects.all(), view_name='snippet-detail', many=True)
+    snippets = serializers.HyperlinkedRelatedField(
+        queryset=Snippet.objects.all(),
+        view_name='snippet-detail',
+        many=True
+    )
 
     class Meta:
         model = User
