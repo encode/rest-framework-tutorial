@@ -11,21 +11,31 @@ STYLE_CHOICES = sorted((item, item) for item in get_all_styles())
 
 
 class Snippet(models.Model):
-    created = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=100, blank=True, default='')
     code = models.TextField()
     linenos = models.BooleanField(default=False)
-    language = models.CharField(choices=LANGUAGE_CHOICES,
-                                default='python',
-                                max_length=100)
-    style = models.CharField(choices=STYLE_CHOICES,
-                             default='friendly',
-                             max_length=100)
+
+    language = models.CharField(
+        choices=LANGUAGE_CHOICES,
+        default='python',
+        max_length=100
+    )
+
+    style = models.CharField(
+        choices=STYLE_CHOICES,
+        default='friendly',
+        max_length=100
+    )
+
     owner = models.ForeignKey('auth.User', related_name='snippets')
-    highlighted = models.TextField()
+    highlighted = models.TextField(blank=True)
+    created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ('created',)
+
+    def __unicode__(self):
+        return self.title
 
     def save(self, *args, **kwargs):
         """
