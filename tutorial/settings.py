@@ -153,7 +153,7 @@ LOGGING = {
 }
 
 REST_FRAMEWORK = {
-    'PAGINATE_BY': 10,
+    'PAGE_SIZE': 10,
 }
 
 import os
