@@ -13,7 +13,7 @@ class SnippetViewSet(viewsets.ModelViewSet):
     """
     This endpoint presents code snippets.
 
-    The `highlight` field presents a hyperlink to the hightlighted HTML
+    The `highlight` field presents a hyperlink to the highlighted HTML
     representation of the code snippet.
 
     The **owner** of the code snippet may update or delete instances
