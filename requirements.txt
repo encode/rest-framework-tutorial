@@ -1,5 +1,5 @@
-djangorestframework==3.3.1
-Django==1.8.5
+djangorestframework==3.5.3
+Django==1.10.2
 Pygments==2.0.2
 Markdown==2.6.3
 
