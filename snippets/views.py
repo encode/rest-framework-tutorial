@@ -34,13 +34,16 @@ class SnippetViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
-    
+
 class UserViewSet(viewsets.ReadOnlyModelViewSet):
     """
-    This endpoint presents the users in the system.
+    list:
 
-    As you can see, the collection of snippet instances owned by a user are
-    serialized using a hyperlinked representation.
+    Return all the user instances.
+
+    retrieve:
+
+    Return the given user instance.
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer

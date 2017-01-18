@@ -12,15 +12,17 @@ STYLE_CHOICES = sorted((item, item) for item in get_all_styles())
 
 class Snippet(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    title = models.CharField(max_length=100, blank=True, default='')
-    code = models.TextField()
-    linenos = models.BooleanField(default=False)
+    title = models.CharField(max_length=100, blank=True, default='', help_text='A descriptive title for the snippet.')
+    code = models.TextField(help_text='The code sample to highlight.')
+    linenos = models.BooleanField(default=False, verbose_name='Line numbers', help_text='`True` if line numbers should be included.')
     language = models.CharField(choices=LANGUAGE_CHOICES,
                                 default='python',
-                                max_length=100)
+                                max_length=100,
+                                help_text='Programming language.')
     style = models.CharField(choices=STYLE_CHOICES,
                              default='friendly',
-                             max_length=100)
+                             max_length=100,
+                             help_text='Highlighting style.')
     owner = models.ForeignKey('auth.User', related_name='snippets')
     highlighted = models.TextField()
 
