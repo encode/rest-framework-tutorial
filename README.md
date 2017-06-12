@@ -2,4 +2,4 @@
 
 Source code for the [Django REST framework tutorial][tut].
 
-[tut]: http://tomchristie.github.com/django-rest-framework/tutorial/1-serialization
+[tut]: http://www.django-rest-framework.org/tutorial/1-serialization
