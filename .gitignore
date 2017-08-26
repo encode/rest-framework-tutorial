@@ -3,6 +3,7 @@
 *~
 .*
 env
+db.sqlite3
 
 # Accept these files in the repository
 !.gitignore
