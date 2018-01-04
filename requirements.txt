@@ -1,7 +1,7 @@
-djangorestframework==3.7.3
-Django==1.11.7
+djangorestframework==3.7.7
+Django==2.0.1
 Pygments==2.2.0
-Markdown==2.6.3
+Markdown==2.6.10
 coreapi==2.3.3
 psycopg2==2.7.3.2
 dj-database-url==0.4.2
