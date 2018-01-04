@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0:$PORT --noreload
+web: gunicorn -b "0.0.0.0:$PORT" -w 3 tutorial.wsgi

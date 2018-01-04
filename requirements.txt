@@ -3,11 +3,6 @@ Django==1.11.7
 Pygments==2.2.0
 Markdown==2.6.3
 coreapi==2.3.3
-
-# heroku
-# run these commands to setup heroku properly
-# heroku create --stack cedar --buildpack git://github.com/heroku/heroku-buildpack-python.git
-# heroku config:add BUILDPACK_URL=git@github.com:heroku/heroku-buildpack-python.git#purge
-# heroku config:set HEROKU=1
 psycopg2==2.7.3.2
 dj-database-url==0.4.2
+gunicorn==19.7.1
