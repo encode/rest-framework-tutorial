@@ -1,0 +1,25 @@
+{
+  "name": "rest-framework-tutorial",
+  "scripts": {
+    "postdeploy": "restore.sh"
+  },
+  "env": {
+    "ENVIRONMENT": "production",
+    "SECRET_KEY": {
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
