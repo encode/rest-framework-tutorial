@@ -1,7 +1,7 @@
 {
   "name": "rest-framework-tutorial",
   "scripts": {
-    "postdeploy": "restore.sh"
+    "postdeploy": "python manage.py migrate && ./restore.sh"
   },
   "env": {
     "ENVIRONMENT": "production",
