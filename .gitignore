@@ -8,3 +8,4 @@ env
 !.gitignore
 !.travis.yml
 /.env
+/.vscode
