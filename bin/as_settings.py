@@ -14,6 +14,9 @@ SETTINGS_KEYS = (
     'POSTGRES_HOST',
     'APP_DB_NAME',
     'DJANGO_SETTINGS_MODULE',
+    'AZ_STORAGE_ACCOUNT_NAME',
+    'AZ_STORAGE_CONTAINER',
+    'AZ_STORAGE_KEY',
 )
 settings_pairs = ['{}={}'.format(k, os.getenv(k)) for k in SETTINGS_KEYS]
 
