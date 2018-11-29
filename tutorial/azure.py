@@ -1,6 +1,9 @@
 # flake8: noqa
 from .settings import *
 
+DEBUG = False
+WHITENOISE_AUTOREFRESH = True
+WHITENOISE_USE_FINDERS = True
 
 DATABASES = {
     'default': {
