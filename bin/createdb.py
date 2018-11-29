@@ -62,7 +62,7 @@ local_ip_firewall_command = [
     '--server-name', os.getenv('POSTGRES_SERVER_NAME'),
     '--start-ip-address', my_ip,
     '--end-ip-address', my_ip,
-    '--name', 'AllowAllAzureIPs',
+    '--name', 'AllowMyIP',
 ]
 
 create_rule = input('Create firewall rules? [y/n]: ')
@@ -77,8 +77,6 @@ create_db_command = [
     'az', 'postgres', 'db', 'create',
     '--resource-group', os.getenv('AZ_GROUP'),
     '--server-name', os.getenv('POSTGRES_SERVER_NAME'),
-    '--admin-user', os.getenv('POSTGRES_ADMIN_USER'),
-    '--admin-password', os.getenv('POSTGRES_ADMIN_PASSWORD'),
     '--name', os.getenv('APP_DB_NAME'),
 ]
 
