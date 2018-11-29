@@ -1,17 +1,18 @@
-# Checkout repo.
-# Authenticate to Azure
-# Push to AppService
+# This pipeline does:
+#   Checkout repo. (Automatic)
+#   Authenticate to Azure
+#   Push to AppService
 pool:
   vmImage: 'Ubuntu 16.04'
-
 steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: 3.6
     architecture: 'x64'
-
 - script: |
-    ls
-    which az
-    git status
+    git push -f "https://$DEPLOYMENT_USERNAME:$DEPLOYMENT_PASSWORD@$DEPLOYMENT_URL" HEAD:master
+  env:
+    DEPLOYMENT_URL: $(DEPLOYMENT_URL)
+    DEPLOYMENT_USERNAME: $(DEPLOYMENT_USERNAME)
+    DEPLOYMENT_PASSWORD: $(DEPLOYMENT_PASSWORD)
   displayName: 'LocalGit Deploy'
