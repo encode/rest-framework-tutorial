@@ -1,0 +1,17 @@
+# Checkout repo.
+# Authenticate to Azure
+# Push to AppService
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: 3.6
+    architecture: 'x64'
+
+- script: |
+    ls
+    which az
+    git status
+  displayName: 'LocalGit Deploy'
