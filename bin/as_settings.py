@@ -20,6 +20,7 @@ SETTINGS_KEYS = (
 )
 settings_pairs = ['{}={}'.format(k, os.getenv(k)) for k in SETTINGS_KEYS]
 
+# https://docs.microsoft.com/en-us/cli/azure/webapp/config/appsettings?view=azure-cli-latest#az-webapp-config-appsettings-set
 settings_command = [
     'az', 'webapp', 'config', 'appsettings', 'set',
     '--name', os.getenv('APP_SERVICE_APP_NAME'),
