@@ -24,7 +24,9 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'id', 'username', 'snippets')
 
 
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
+class GroupSerializer(serializers.ModelSerializer):
+    id = serializers.HyperlinkedIdentityField(view_name='group-detail')
+
     class Meta:
         model = Group
         fields = '__all__'
