@@ -4,7 +4,7 @@ from .models import Snippet
 
 
 class SnippetAdmin(admin.ModelAdmin):
-    pass
+    readonly_fields = ('highlighted',)
 
 
 admin.site.register(Snippet, SnippetAdmin)
