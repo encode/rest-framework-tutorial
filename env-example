@@ -1,0 +1,110 @@
+
+# This is a placeholder file for the environment variables you'll need to
+# configure for your application.
+#
+# - Make a copy and name it something appropriate.
+#   - e.g. .azure-env
+# - Fill in the values.
+# - Load the values into your environment before interacting with Azure:
+#
+#    $ # Export values from file into environment:
+#    $ export $(grep -v '^#' .azure-env | xargs)
+#    $ # Now interact with (e.g.) the production PosgreSQL instance:
+#    $ ./manage.py showmigrations
+#    ...
+
+# The Azure Resource Group and Location to use for you applicaiton.
+# - If using the VS Code App Service extension to create your app,
+#   use the values it provides
+AZ_GROUP=''
+AZ_LOCATION=''
+
+# The name you choose for your App Service application.
+APP_SERVICE_APP_NAME=''
+
+# Server Name, Admin User and Admin Password for creating the Azure
+# PostgreSQL server.
+POSTGRES_SERVER_NAME=''
+POSTGRES_ADMIN_USER=''
+POSTGRES_ADMIN_PASSWORD=''
+
+# The Azure PostgreSQL server host.
+# This will not be available until after creating the database server.
+# (Will be output at end if running `./bin/createdb.py`)
+POSTGRES_HOST=''
+
+# The application DB name you want to use.
+# `./bin/createdb.py` will offer to create this db after creating the server.
+APP_DB_NAME=''
+
+# The production settings module. `tutorial.azure` is the example provided.
+DJANGO_SETTINGS_MODULE='tutorial.azure'
+
+# Azure Storages Account Name, Container Name and Key for staticfiles.
+# Once these are set you can run collectstatic to push the staticfiles.
+AZ_STORAGE_ACCOUNT_NAME=''
+AZ_STORAGE_KEY=''
+AZ_STORAGE_CONTAINER=''
+
+
+
+
+
+
+
+
+# App Service Deployment Settings for Azure Pipeline
+#
+# Combine these to give the push URL:
+#
+#    "https://$DEPLOYMENT_USERNAME:$DEPLOYMENT_PASSWORD@$DEPLOYMENT_URL"
+#
+# git push -f <URL> HEAD:master
+#
+# $ git push -f "https://$DEPLOYMENT_USERNAME:$DEPLOYMENT_PASSWORD@$DEPLOYMENT_URL" HEAD:master
+#
+# Credentials can be added as secret variable to Azure DevOps Pipelines in order to use `.azure-deploy.yml`.
+#
+#
+# Username and Password for the deployment.
+#
+#   YOU MUST CREATE THESE DEPLOY THE DEPLOYMENT URL WILL BE AVAILABLE.
+#
+# Create by using the `az` CLI:
+#
+#   $ az webapp deployment user set --user-name <username> --password <password>
+#
+# Or add in the portal.
+#
+#   App > Deployment Center > Deployment Credentials > User Credentials
+DEPLOYMENT_USERNAME=''
+DEPLOYMENT_PASSWORD=''
+
+# The `LocalGit` deployment URL of the App.
+#
+# You get this when the deployment source is configured.
+# You can retrieve it from the portal or via the `az` CLI:
+#
+# $ az webapp deployment source config-local-git --name=<APP_SERVICE_APP_NAME>  --resource-group=<AZ_GROUP>
+DEPLOYMENT_URL=''
+
+
+
+
+
+
+
+
+
+# Extra variables for deploying the Functions version of the app.
+#
+# - Resource Group for the functions application.
+# - Functions application name.
+FUNCTIONS_GROUP=''
+FUNCTIONS_APP_NAME=''
+
+# Base URL of the function wrapping requests to django.
+# This is used for correctly mapping static asset URLs.
+# The example application uses `api/serverless`.
+FUNCTIONS_MOUNT_POINT='api/serverless'
+
