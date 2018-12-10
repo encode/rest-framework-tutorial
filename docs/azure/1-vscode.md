@@ -8,9 +8,9 @@ We assume you followed the _Preparation_ steps from the README, and have the exa
 
 **Setup**
 
-We´ll add some code here to demonstrate VS Code in action. If you want to follow-along checkout the `vscode-begin` tag:
+We´ll add some code here to demonstrate VS Code in action. If you want to follow-along checkout the `azure-begin` tag:
 
-    $ git checkout
+    $ git checkout azure-begin
 
 When you´ve finished remember to discard your changes and switch back to `master`:
 
@@ -166,10 +166,9 @@ Disable breakpoints. Reload the admin. Observe the `highlighted` field is no-lon
 
 # Next Steps
 
-Explore other features in the [Python for VS Code docs][vscode-python]
+Explore other features in the [Python for VS Code docs][vscode-python] and the [Visual Studio Code Django Tutorial][vscode-django-tutorial].
 
-
-
+In the step we´ll [Deploy our Django Application to the Azure App Service](./2-appservice.md).
 
 [drf-gist]: https://gist.github.com/carltongibson/6d2870c7958dafe5002686454605d8b0
 [new-issue]: https://github.com/carltongibson/rest-framework-tutorial/issues/new
