@@ -43,7 +43,7 @@ That´s it. You´re ready to go.
 1. [Using Django with VS Code][azure-vscode].
 2. [Deploying Django to the Azure App Service][azure-appservice].
 3. [Adding CI & CD with Azure Pipelines][azure-pipelines].
-4. Serverless Django with Azure Functions.
+4. [Serverless Django with Azure Functions][azure-functions].
 
 <!-- Links -->
 [drf-tutorial]: http://www.django-rest-framework.org/tutorial/1-serialization
@@ -52,4 +52,4 @@ That´s it. You´re ready to go.
 [azure-vscode]: ./docs/azure/1-vscode.md
 [azure-appservice]: ./docs/azure/2-appservice.md
 [azure-pipelines]: ./docs/azure/3-pipelines.md
-
+[azure-functions]: ./docs/azure/4-functions.md
