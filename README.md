@@ -40,7 +40,7 @@ That´s it. You´re ready to go.
 
 ### Using Django with Visual Studio Code & Azure
 
-1. Using Django with VS Code.
+1. [Using Django with VS Code][azure-vscode].
 2. Deploying Django to the Azure App Service.
 3. Adding CI & CD with Azure Pipelines.
 4. Serverless Django with Azure Functions.
@@ -48,4 +48,5 @@ That´s it. You´re ready to go.
 <!-- Links -->
 [drf-tutorial]: http://www.django-rest-framework.org/tutorial/1-serialization
 [new-issue]: https://github.com/carltongibson/rest-framework-tutorial/issues/new
-[vscode-python]: https://code.visualstudio.com/docs/python/python-tutorial
+
+[azure-vscode]: ./docs/azure/1-vscode.md
