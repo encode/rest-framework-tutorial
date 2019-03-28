@@ -3,7 +3,7 @@ Django==2.1.7
 Pygments==2.3.1
 Markdown==3.1
 coreapi==2.3.3
-psycopg2==2.7.7
+psycopg2-binary==2.7.7
 dj-database-url==0.5.0
 gunicorn==19.9.0
 whitenoise==4.1.2
