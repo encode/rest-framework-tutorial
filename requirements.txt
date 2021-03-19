@@ -1,4 +1,4 @@
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 Django==3.0.7
 Pygments==2.6.1
 Markdown==3.2.1
