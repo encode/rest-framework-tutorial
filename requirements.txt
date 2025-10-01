@@ -1,5 +1,5 @@
 djangorestframework==3.16.0
-Django==4.2.24
+Django==4.2.25
 Pygments==2.19.1
 Markdown==3.2.1
 coreapi==2.3.3
