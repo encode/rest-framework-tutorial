@@ -9,5 +9,7 @@ dj-database-url==3.1.2
 gunicorn==25.1.0
 whitenoise==6.12.0
 PyYAML==6.0.3
+# Needed by copreapi on Python 3.13+
+legacy-cgi; python_version>='3.13'
 # coreapi depends on pkg_resources which was part of setuptools until v82
 setuptools<82
