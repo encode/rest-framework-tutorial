@@ -2,8 +2,8 @@
 *.sqlite3
 *.pyc
 *~
-.*
-env
+.venv
+venv
 
 # Accept these files in the repository
 !.gitignore
