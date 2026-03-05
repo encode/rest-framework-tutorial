@@ -1,0 +1,19 @@
+[project]
+name = "rest-framework-tutorial"
+version = "1.0.0"
+description = "The Django REST framework tutorial. 🎓"
+readme = "README.md"
+requires-python = "==3.13.*"
+dependencies = [
+    "dj-database-url==3.1.2",
+    "django==6.0.3",
+    "djangorestframework==3.17.1",
+    "drf-spectacular==0.29.0",
+    "gunicorn==25.3.0",
+    "inflection==0.5.1",
+    "markdown==3.10.2",
+    "psycopg[binary]==3.3.3",
+    "pygments==2.19.2",
+    "pyyaml==6.0.3",
+    "whitenoise==6.12.0",
+]
