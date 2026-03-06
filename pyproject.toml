@@ -1,0 +1,23 @@
+[project]
+name = "rest-framework-tutorial"
+version = "1.0.0"
+description = "The Django REST framework tutorial. 🎓"
+readme = "README.md"
+requires-python = "==3.13.*"
+dependencies = [
+    "coreapi==2.3.3",
+    "dj-database-url==3.1.2",
+    "django==5.2.12",
+    "djangorestframework==3.16.1",
+    "gunicorn==25.1.0",
+    "inflection==0.5.1",
+    # Needed by copreapi on Python 3.13+
+    "legacy-cgi; python_version>='3.13'",
+    "markdown==3.10.2",
+    "psycopg[binary]==3.3.3",
+    "pygments==2.19.1",
+    "pyyaml==6.0.3",
+    # coreapi depends on pkg_resources which was part of setuptools until v82
+    "setuptools<82",
+    "whitenoise==6.12.0",
+]
