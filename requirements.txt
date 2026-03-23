@@ -1,6 +1,6 @@
 djangorestframework==3.16.1
 Django==5.2.12
-Pygments==2.19.1
+Pygments==2.19.2
 Markdown==3.10.2
 inflection==0.5.1
 psycopg[binary]==3.3.3
