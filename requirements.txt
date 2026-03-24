@@ -1,5 +1,5 @@
 djangorestframework==3.17.0
-Django==5.2.12
+Django==6.0.3
 Pygments==2.19.2
 Markdown==3.10.2
 inflection==0.5.1
