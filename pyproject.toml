@@ -9,7 +9,7 @@ dependencies = [
     "django==6.0.5",
     "djangorestframework==3.17.1",
     "drf-spectacular==0.29.0",
-    "gunicorn==25.3.0",
+    "gunicorn==26.0.0",
     "inflection==0.5.1",
     "markdown==3.10.2",
     "psycopg[binary]==3.3.4",
