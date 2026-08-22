@@ -13,7 +13,7 @@ dependencies = [
     "inflection==0.5.1",
     "markdown==3.10.3",
     "psycopg[binary]==3.3.4",
-    "pygments==2.20.0",
+    "pygments==2.21.0",
     "pyyaml==6.0.3",
     "whitenoise==6.12.0",
 ]
