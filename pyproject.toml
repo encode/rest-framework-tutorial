@@ -12,7 +12,7 @@ dependencies = [
     "gunicorn==26.2.0",
     "inflection==0.5.1",
     "markdown==3.10.3",
-    "psycopg[binary]==3.3.4",
+    "psycopg[binary]==3.3.5",
     "pygments==2.21.0",
     "pyyaml==6.0.3",
     "whitenoise==6.12.0",
