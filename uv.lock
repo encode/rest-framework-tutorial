@@ -131,14 +131,14 @@ wheels = [
 
 [[package]]
 name = "psycopg"
-version = "3.3.6"
+version = "3.3.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "tzdata", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/76/26/3ea4ca5eaea1c0debcdf7ee7c1613fbe721dc27a03c461c0817ffd8a0601/psycopg-3.3.6.tar.gz", hash = "sha256:c081f2250df751a943036e42db6df4571c66cd0aabe8291a7a506512b12007d2", size = 168171, upload-time = "2026-09-18T13:22:55.152Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/77/a3/55c9fb649391fddec8d7ba3005162cd76e8cb3b2eea3dc922684aa0013e4/psycopg-3.3.7.tar.gz", hash = "sha256:6574f23fd79bf129ee0616b49f6e358faf7ae1bf3a362d2ad599cf8f9c3d4935", size = 168912, upload-time = "2026-11-03T03:58:07.876Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4e/de/748bd7609c71cae5d737f0ba9192f19329f70180ecda8fff3cac02c5abe3/psycopg-3.3.6-py3-none-any.whl", hash = "sha256:a1db9f7148b06a28606767efaca51fa6f9398c5c0a3810519be69d7000bdb631", size = 215490, upload-time = "2026-09-18T13:15:29.374Z" },
+    { url = "https://files.pythonhosted.org/packages/b0/2a/2e05cc01b2817b8baff419823774bb928efd0a36de12da78f19482cfa329/psycopg-3.3.7-py3-none-any.whl", hash = "sha256:d592e88a077e01ff57f22d59f16e828b92f2b2d9f439b6679d582b48d74cf306", size = 216207, upload-time = "2026-11-03T03:51:21.09Z" },
 ]
 
 [package.optional-dependencies]
@@ -148,20 +148,20 @@ binary = [
 
 [[package]]
 name = "psycopg-binary"
-version = "3.3.6"
+version = "3.3.7"
 source = { registry = "https://pypi.org/simple" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b4/c3/c072584b69ad44a747b448cfc9766fecb8aae56e372a017e2ef668790057/psycopg_binary-3.3.6-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:5ad8f35e67cc16d1fad1fa8c88972dc9b3a3141ea67897399904edab96a301b6", size = 4712284, upload-time = "2026-09-18T13:19:13.451Z" },
-    { url = "https://files.pythonhosted.org/packages/0a/b9/4283b785339e8e2318d03048994b093d650ea6289fabaa806b765dc0d449/psycopg_binary-3.3.6-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:373704aea331d3f3e3402c125a1543f5875e2986ebb54f97d1647942161f803f", size = 4772031, upload-time = "2026-09-18T13:19:18.524Z" },
-    { url = "https://files.pythonhosted.org/packages/6f/72/7a1321d359246769fff1affffbd0132785a28f7f63c18524c15a502398f4/psycopg_binary-3.3.6-cp313-cp313-manylinux2014_ppc64le.manylinux_2_17_ppc64le.whl", hash = "sha256:b82491019b884d62318b5f30706c3d7e6d4e5a6cb7eabcb3edc0c1b0fdaceae9", size = 5556392, upload-time = "2026-09-18T13:19:24.418Z" },
-    { url = "https://files.pythonhosted.org/packages/de/b0/c6f8a0585a5dacbea74e130bcfc66629390e8f5bbc79d2a8e806e8952150/psycopg_binary-3.3.6-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:cec5ea900390897d0b46130f60bc2883bf19c314f9044235217c8be88b0ef269", size = 5237855, upload-time = "2026-09-18T13:19:31.257Z" },
-    { url = "https://files.pythonhosted.org/packages/e2/fc/c3a7a8bbef7e945ec584ac61d460a612363ea398511cd0e220242b1d69f1/psycopg_binary-3.3.6-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:98c02090d88f2ebc0ec1e8da538f77d225ce0fffecf372aa39262e62a1b054ef", size = 6833856, upload-time = "2026-09-18T13:19:43.622Z" },
-    { url = "https://files.pythonhosted.org/packages/a9/f2/8e80b921db728ebb68fc105bd7c4277f908210ad755bd6481d5ea7add740/psycopg_binary-3.3.6-cp313-cp313-manylinux_2_38_riscv64.manylinux_2_39_riscv64.whl", hash = "sha256:ee2c4728c691245e24501fcd7a97b5b381236b9985bc445bba88cdce7d1b5784", size = 5070730, upload-time = "2026-09-18T13:19:49.968Z" },
-    { url = "https://files.pythonhosted.org/packages/54/6a/5b313e0c5348244f0e973aff3258bf86766656256d5ece8d541a53e35b4a/psycopg_binary-3.3.6-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:f19cc87343eaa55255e76b31259a570072ac95d6ae82c92dd34b97691f5e49dc", size = 4598089, upload-time = "2026-09-18T13:19:56.426Z" },
-    { url = "https://files.pythonhosted.org/packages/32/e9/db7f76ec24bf6699e92bf604e5c4bae10664a681a8999ef42aa0faf0f2c6/psycopg_binary-3.3.6-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:fdccb3a0e184b03e9baa673b15a809cf36c339c85dbda0ebc25a698846dfbee8", size = 4278481, upload-time = "2026-09-18T13:20:04.681Z" },
-    { url = "https://files.pythonhosted.org/packages/61/83/72c67013656f4d6b547caabffb193e91d57e63f90eefdcc6d045c400e97d/psycopg_binary-3.3.6-cp313-cp313-musllinux_1_2_riscv64.whl", hash = "sha256:9892188bb15e5803beb51afe8a25add6b56be391a53058e8bca03b74e1e6bf22", size = 4009229, upload-time = "2026-09-18T13:20:11.905Z" },
-    { url = "https://files.pythonhosted.org/packages/82/35/5e4500df2c999eb0faed8b184e6958b834172128274f06167a5deef4c19c/psycopg_binary-3.3.6-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:3af90f92769d8cc10f94515ee7a0aef36ea85ca733a0ce22858f6e0953f41138", size = 4321467, upload-time = "2026-09-18T13:20:17.949Z" },
-    { url = "https://files.pythonhosted.org/packages/55/7f/e350e1cf498ba2565c3f87b12f429d2012eb86b76c2b3845a19ee5fbb4d6/psycopg_binary-3.3.6-cp313-cp313-win_amd64.whl", hash = "sha256:0ebfad5d131de9f892ae9e70cc7616207768b6714b66a52d4612b8ceaf78b372", size = 3658179, upload-time = "2026-09-18T13:20:22.691Z" },
+    { url = "https://files.pythonhosted.org/packages/ce/ff/936c13638c8b9bd4519d3ad7996e7600b066909156cb1cd6f55b73d2203e/psycopg_binary-3.3.7-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:e0639d06c50c684bb9867fb4c0593b7327525275142c0b620053c55134572773", size = 4715405, upload-time = "2026-11-03T03:54:45.749Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/19/98a3d8dd5b61478ce242f017b70d68241d151826409ab3f88066ed2ec327/psycopg_binary-3.3.7-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:89b508e50ccfe93a440ce9450c33ff78a3e2462dab369e66ee63e725562421cb", size = 4775846, upload-time = "2026-11-03T03:54:51.138Z" },
+    { url = "https://files.pythonhosted.org/packages/9d/74/c855489f8be5ee3d8bfd4cee523e036a49b3aa1bfdc6eb5b72c34828fdb2/psycopg_binary-3.3.7-cp313-cp313-manylinux2014_ppc64le.manylinux_2_17_ppc64le.whl", hash = "sha256:a0aeb1b680b2ee414a0196a9dd94b17edaa75c1c04f7cddadc9aae95d0dd940c", size = 5575585, upload-time = "2026-11-03T03:54:57.816Z" },
+    { url = "https://files.pythonhosted.org/packages/ff/c9/860db102775b7fcf1f08fe06b0d845f926fe5ab89599d23007693354331d/psycopg_binary-3.3.7-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:e3cc435fd83ff3fe627370bb8208bbcfd79631be2ac3b49b7a5c7edb528011c9", size = 5301826, upload-time = "2026-11-03T03:55:05.309Z" },
+    { url = "https://files.pythonhosted.org/packages/a7/37/5f09fb2d1ad05f439329350097c702c52c1355156c176e3515d12496f723/psycopg_binary-3.3.7-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:0b311c834ece61e9be0df48c6078ca8949ef50d43a884f4c05628f77a8b31442", size = 6852614, upload-time = "2026-11-03T03:55:14.88Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/62/befa167c2ea5bfdeb65ce0f799aa35d78eb693250b650963ec7cba1fa17d/psycopg_binary-3.3.7-cp313-cp313-manylinux_2_38_riscv64.manylinux_2_39_riscv64.whl", hash = "sha256:15873c72c6db035b7bbe9d443dedc571753c713b7d10223aea6438310c0f468e", size = 5076255, upload-time = "2026-11-03T03:55:23.593Z" },
+    { url = "https://files.pythonhosted.org/packages/eb/97/8e622891df044606e0819cd17b589d4b47834eddd3f941848edab207b7e8/psycopg_binary-3.3.7-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:191dc5f2056368e0556359be7782a3be201399c7f1dfc3fe0ebffde37446e1f2", size = 4619359, upload-time = "2026-11-03T03:55:31.516Z" },
+    { url = "https://files.pythonhosted.org/packages/40/84/857ec7d5ab5e63ec05e98d22d0e8c3b85df5a49cdfb8b3fc84879424040a/psycopg_binary-3.3.7-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:21dccda9c04e52240b9d6d934c5b710c198fdd7d0c60a358d78927988bca154e", size = 4301370, upload-time = "2026-11-03T03:55:35.691Z" },
+    { url = "https://files.pythonhosted.org/packages/d9/f3/9a21844b395d49dbe7e6fd53c7cddfc7e54766e7d9957c89a8fec6c75c2a/psycopg_binary-3.3.7-cp313-cp313-musllinux_1_2_riscv64.whl", hash = "sha256:9ae3e685302569c34bf159927e9667d3afd5dd34e68a92afabe05e2022dafc68", size = 4021521, upload-time = "2026-11-03T03:55:39.78Z" },
+    { url = "https://files.pythonhosted.org/packages/08/d7/8eda1d662b7049a6729a6b5f30601561e5204bb7ff3ae15796640afdba53/psycopg_binary-3.3.7-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:4c8ab53d4a7c9f68d4b2cf878d1e56880bb87a1008435a5c3770422ac1e1b4ef", size = 4334750, upload-time = "2026-11-03T03:55:45.384Z" },
+    { url = "https://files.pythonhosted.org/packages/dd/92/2a1ad37faa52270594e92c483a28084d75a3c696b95ad8f6fc18faf39ead/psycopg_binary-3.3.7-cp313-cp313-win_amd64.whl", hash = "sha256:63fc0a5a226e63db37a3f038f2581ea8b8189112daa86bd8ae52c3897ca105da", size = 3618325, upload-time = "2026-11-03T03:55:49.757Z" },
 ]
 
 [[package]]
@@ -231,7 +231,7 @@ requires-dist = [
     { name = "gunicorn", specifier = "==26.2.0" },
     { name = "inflection", specifier = "==0.5.1" },
     { name = "markdown", specifier = "==3.11.2" },
-    { name = "psycopg", extras = ["binary"], specifier = "==3.3.6" },
+    { name = "psycopg", extras = ["binary"], specifier = "==3.3.7" },
     { name = "pygments", specifier = "==2.21.0" },
     { name = "pyyaml", specifier = "==6.0.3" },
     { name = "whitenoise", specifier = "==6.12.0" },
