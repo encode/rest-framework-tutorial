@@ -11,7 +11,7 @@ dependencies = [
     "drf-spectacular==0.30.0",
     "gunicorn==27.0.0",
     "inflection==0.5.1",
-    "markdown==3.11.2",
+    "markdown==3.11.3",
     "psycopg[binary]==3.3.7",
     "pygments==2.21.0",
     "pyyaml==6.0.3",
